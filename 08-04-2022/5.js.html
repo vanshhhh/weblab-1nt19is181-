@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function covid()
+        {
+            var a = prompt("Enter string");
+            var covid = "coronavirus"
+            var res = "POSITIVE"
+            var j=0;
+            console.log(a.length);
+            for(i = 0;i<a.length;i++){
+                flag = 0;
+                while(j<covid.length){
+                    if(a[i] == covid[j]){
+                        flag=1;
+                        break;
+                    }
+                    j++;
+                    
+                }
+                if(flag==0){
+                        res = "NEGATIVE";
+                        break;
+                    }
+                    else{
+                        flag =1;
+                    }
+            }
+            // document.write(res);
+            // document.write("<br>");
+            return res; 
+        }
+        var num = prompt("Total cantidates")
+        var num = parseInt(num);
+        for(var i = 0 ;i<num;i++){
+            document.write(covid());
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+<body>
+    <input id="myInput" type="text">
+    <button onclick="myFun()">Check</button>
+   <script>
+        function myFun(){ 
+        var text;
+        var color=document.getElementById("myInput").value;
+        switch(color)
+        {
+            case "R":
+                text="Red";
+                break;
+            case "B":
+                text="Blue";
+                break;
+            case "G":
+                text="Green";
+                break;
+            case "O":
+                text="Orange";
+                break;
+            case "Y":
+                text="Yellow";
+                break;
+            case "W":
+                text="White";
+                break; 
+            default:
+                text="Invalid Input";
+        }
+        document.write(text);
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even sum</title>
+</head>
+<body>
+    <script>
+        var arr=[];
+        var sum = 0;
+        var size=(Number(prompt("Enter the size of array")));
+        for(var i=0;i<size;i++)
+        {
+            arr[i]=(Number(prompt("Enter the element"+(i+1))));
+        }
+        const add=(arr) =>{
+            for(var i=0;i<size;i++)
+            {
+                if(arr[i]%2==0)
+            sum+=arr[i];   
+        }
+        return sum;
+    }
+    document.write(add(arr));
+    </script>
+</body>
+</html>

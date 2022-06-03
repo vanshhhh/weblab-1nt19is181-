@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert values at position</title>
+</head>
+<body>
+    <script>
+    var a=[];
+        var size=prompt("Enter the size of array");
+        for(var i=0;i<size;i++)
+        {
+            a[i]=prompt("Enter the element "+(i+1));
+        }
+
+        document.write("Array:"+a+"<br/>");
+        var num=prompt(" Enter the element to be inserted");
+        var pos=prompt(" Enter the position for the element to be inserted");
+        size++;
+        for(i=size-1;i>=pos;i--)
+        {
+            a[i]=a[i-1];
+        }
+        a[pos-1]=num;
+        document.write("Array after inserting :"+a+"<br/>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting</title>
+</head>
+<body>
+    <script>
+       
+       document.write("Using array methods &nbsp ");
+        const arr=[4,6,7,8,2,1,-2];
+        arr.sort();
+        document.write(arr+"<br>");
+
+
+       
+        document.write("Without using array methods  &nbsp ");
+        function bubbleSort(arr) {
+        var flag = false;
+        while (!flag) {
+            flag = true;
+            for (var i = 1; i < arr.length; i++) {
+                if (arr[i - 1] > arr[i]) {
+                flag = false;
+                var tmp = arr[i - 1];
+                arr[i - 1] = arr[i];
+                arr[i] = tmp;
+            }
+        }
+    }
+  return arr;
+}
+var numbers = [4,6,7,8,2,1,-2];
+bubbleSort(numbers);
+document.write(numbers);
+    </script>
+</body>
+</html>

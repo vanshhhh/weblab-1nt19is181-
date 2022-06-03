@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap year</title>
+</head>
+<body>
+    
+    <script>
+        function checkleapyear( year)
+    {
+        if(year%400==0)
+        {
+          document.write(year+" is a LEAP YEAR"+"<br/>"); 
+          return; 
+        }
+        else if(year%100==0)
+        {
+            document.write(year+" is a LEAP YEAR"+"<br/>");
+            return; 
+        }
+        else if(year%4==0)
+        {
+            document.write(year+" is a LEAP YEAR"+"<br/>");
+            return;
+        }
+        else
+        { 
+            return;
+        }
+    }
+        var start=prompt("Enter the first year");
+        var end =prompt("Enter the last year");
+        for(var i=start;i<=end;i++)
+        {
+            checkleapyear(i);
+        }
+    </script>
+</body>
+</html>

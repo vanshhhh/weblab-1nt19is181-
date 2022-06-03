@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete values at positon</title>
+</head>
+<body>
+    <script>
+    var a=[];
+        var size=prompt("Enter the size of array");
+        for(var i=0;i<size;i++)
+        {
+            a[i]=prompt("Enter the element "+(i+1));
+        }
+
+        document.write("Array:"+a+"<br/>");
+        var num=prompt(" Enter the element to be deleted");
+        for(i=0;i<size;i++)
+        {
+            if(a[i]==num)
+            {
+                var pos=a[i];
+            }
+        }
+        for(i=pos-1;i<size;i++)
+        {
+            a[i]=a[i+1];
+        }
+        a.length=size-1;
+        document.write("Array after deleting :"+a+"<br/>");
+    </script>
+</body>
+</html>

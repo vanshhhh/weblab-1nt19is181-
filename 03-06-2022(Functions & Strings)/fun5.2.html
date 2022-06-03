@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass by reference</title>
+</head>
+<body>
+    <script>
+        function PassbyReference(obj) {
+	let tmp = obj.a;
+	obj.a = obj.b;
+	obj.b = tmp;
+	document.write(`Inside Pass By Reference Function : a = ${obj.a} b = ${obj.b}`+"<br>");
+}
+let obj = {
+	a: 10, b: 20
+}
+document.write(`Before calling Pass By Reference Function : a = ${obj.a} b = ${obj.b}`+"<br>");
+PassbyReference(obj)
+document.write(`After calling Pass By Reference Function : a = ${obj.a} b = ${obj.b}`+"<br>");
+    </script>
+</body>
+</html>

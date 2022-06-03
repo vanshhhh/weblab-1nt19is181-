@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass by value</title>
+</head>
+<body>
+    <script>
+        function Passbyvalue(a, b) {
+	let tmp;
+	tmp = b;
+	b = a;
+	a = tmp;
+	document.write(`Inside Pass by value function : a = ${a} b = ${b}`+"<br>");
+}
+let a = 1;
+let b = 2;
+document.write(`Before calling Pass by value Function : a = ${a} b = ${b}`+"<br>");
+
+Passbyvalue(a, b);
+
+document.write(`After calling Pass by value Function : a =${a} b = ${b}`+"<br>");
+    </script>
+</body>
+</html>

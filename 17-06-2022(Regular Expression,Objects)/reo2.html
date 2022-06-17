@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function findaDate(str) {
+        let reg = /(\d{2})\/(0[1-9]|1[0-2])\/(\d{4})/g;
+        return str.match(reg);
+      }
+      document.write(
+        findaDate("Albert Einstein was born in Ulm, on 14/03/1879.")
+      ); // [14/03/1987]
+      document.write(findaDate("16/13/2020.")); // null
+    </script>
+  </body>
+</html>
